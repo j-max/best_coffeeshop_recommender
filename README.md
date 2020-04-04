@@ -15,12 +15,13 @@ I use block shape from 2010 to allow me to map census population data to the fin
 
 ## Chicago Data Portal
 - Chicago active [businesses records]((https://data.cityofchicago.org/Community-Economic-Development/Business-Licenses-Current-Active/uupf-x98q))   
-<img src="visualization/plotly/plotly_images/businesses.png" 
-     width="50" height="70" alt="Chicago business map" />
+     
+ <img src="visualization/plotly/plotly_images/businesses.png" width="600" height="300" alt="Chicago business map" />  
 
 - Location data for [Chicago Public Libraries](https://data.cityofchicago.org/Education/Libraries-Locations-Hours-and-Contact-Information/x8fc-8rcq) and [El stops](https://data.cityofchicago.org/Transportation/CTA-System-Information-List-of-L-Stops/8pix-ypme)__
 
-![el stop_map](visualization/plotly/plotly_images/el_stop_map.png)  
+<img src="visualization/plotly/plotly_images/el_stop_map.png"
+     width="600" height="300" alt="Chicago El Stop Map" />  
 
 - [Chicago crime records](https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2)__
 ![crime map](visualization/plotly/plotly_images/crime_map.png)  
