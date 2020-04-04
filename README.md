@@ -1,13 +1,12 @@
 Recommender for Locations to Open a Coffeeshop in Chicago
 ===============
 
-As a former barista, I have a deep love for coffee.  At least I think it's love, and not caffeine addiction. Aside from providing that sharpening jolt in the morning, coffeeshops serve communities by providing safe spaces for conversation, study, and general low key fun. <br><br>
+As a former barista, I have a deep love for coffee.  At least I think it's love, and not caffeine addiction. Aside from providing that sharpening jolt in the morning, coffeeshops serve communities by providing safe spaces for conversation, study, and general low key fun.   
 
 I am under strong impression that a community cannot have too many independent coffeeshops.  With that in mind, I created the present project, which uses clustering techniques on business and demographic data to identify potential locations in Chicago where a coffeeshop would thrive.
 
 Data
 ===============
-The data comes from various sources, and can be found [here](./data):
 
 ### Census Shapefiles
 In order to translate the various data found below into machine learning ready form depends on census shape files. I use the lat/long centroid of each Chicago block shapefile to count the number of businesses, already existing coffeeshops, and reported crimes within a small square area. I also calculate distance to the nearest El stops and libraries.  View the code for these calculations [here](data/blockshapes).  
