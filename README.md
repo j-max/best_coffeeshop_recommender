@@ -15,20 +15,20 @@ I use block shape from 2010 to allow me to map census population data to the fin
 
 ## Chicago Data Portal
 - Chicago active [businesses records]((https://data.cityofchicago.org/Community-Economic-Development/Business-Licenses-Current-Active/uupf-x98q))   
-[business_map](visualization/plotly/plotly_images/businesses.png)  
+![business_map](visualization/plotly/plotly_images/businesses.png)  
 
 - Location data for [Chicago Public Libraries](https://data.cityofchicago.org/Education/Libraries-Locations-Hours-and-Contact-Information/x8fc-8rcq) and [El stops](https://data.cityofchicago.org/Transportation/CTA-System-Information-List-of-L-Stops/8pix-ypme)__
 
-[el stop_map](visualization/plotly/plotly_images/el_stop_map.png)  
+![el stop_map](visualization/plotly/plotly_images/el_stop_map.png)  
 
 - [Chicago crime records](https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2)__
-[crime map](visualization/plotly/plotly_images/crime_map.png)  
+![crime map](visualization/plotly/plotly_images/crime_map.png)  
 
 ## Yelp
 
 - 936 Chicago coffee shops obtained via the Yelp API. 
 - See code [here](./data/yelp) which shows API usage and Postgres storage
-[yelp coffee shop map_map](visualization/plotly/plotly_images/yelp_coffee_shops.png)  
+![yelp coffee shop map_map](visualization/plotly/plotly_images/yelp_coffee_shops.png)  
 
 ## Census.gov
 - I collect household data for Chicago zipcodes from https://factfinder.census.gov/, which has recently been moved to https://data.census.gov/cedsci/. The original Selenium code used to scrape the data is found [here]('data/zip_mean_inc/').  A pickle of the gathered data can also be found in that folder.
