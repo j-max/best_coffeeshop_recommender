@@ -38,3 +38,32 @@ _
 ## Census.gov
 - I collect household data for Chicago zipcodes from https://factfinder.census.gov/, which has recently been moved to https://data.census.gov/cedsci/. The original Selenium code used to scrape the data is found [here]('data/zip_mean_inc/').  A pickle of the gathered data can also be found in that folder.
 
+Modeling
+==========
+Having composed dataframes which consist of rows corresponding to the above data as counted within 46290 square regions of Chicago, the data is ready for unsupervised modeling. There are no true labels for this project. How to categorize areas best suited to open a coffee shop involves some subjectivity.__
+
+I try a variety of clustering methods, including kMeans, heirarchical agglomerative, mean shift, and dbscan. The code for the clustering models is found [here](./models/)
+
+I find DBSCAN(eps=.25, min_samples=11) returns the best clusters of blocks, having the advantage of weeding out large portions of the city it deems noise.  
+
+<img src="visualization/modeling_viz/dbscan_wnoise.png" width="600" height="400" alt="dbscan with noise greyed out" />  
+
+In the image above, the greyed out points are noise. The visualization is possible through condensing the data to two principal components. Below, the image shows the initial clusters with noise filtered out, 42 clusters in total.  
+
+<img src="visualization/modeling_viz/dbscan_nonoise.png" width="600" height="400" alt="dbscan with noise removed" />  
+
+From here, the task is to winnow down to a select few clusters which express beneficial qualities which a business owner would deem advantageous. 
+My investigation leads me to the following cluster groups: 
+
+<img src="visualization/modeling_viz/target_clusters.png" width="600" height="400" alt="dbscan target clusters" />
+
+Here are the clusters superimposed onto a map of the city.  
+
+<img src="visualization/modeling_viz/targets_on_map.png" width="600" height="400" alt="Target clusters on map of city" />
+
+Zoom into the red circle above, we see a potential spot for a coffe shop.  
+
+<img src="visualization/modeling_viz/potential_location.png" width="600" height="400" alt="Target clusters on map of city" />
+
+
+
