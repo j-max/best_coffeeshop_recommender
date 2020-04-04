@@ -38,3 +38,12 @@ _
 ## Census.gov
 - I collect household data for Chicago zipcodes from https://factfinder.census.gov/, which has recently been moved to https://data.census.gov/cedsci/. The original Selenium code used to scrape the data is found [here]('data/zip_mean_inc/').  A pickle of the gathered data can also be found in that folder.
 
+Modeling
+==========
+Having composed dataframes which consist of rows corresponding to the above data as counted within 46290 square regions of Chicago, the data is ready for unsupervised modeling. There are no true labels for this project. How to categorize areas best suited to open a coffee shop involves some subjectivity.__
+
+I try a variety of clustering methods, including kMeans, heirarchical agglomerative, mean shift, and dbscan. The code for the clustering models is found [here](./models/)
+
+I find DBSCAN returns the best clusters of blocks, having the advantage of weeding out large portions of the city it deems noise.  
+
+<img src="visualization/plotly/plotly_images/dbscan_wnoise.png" width="600" height="300" alt="dbscan with noise greyed out" />  
