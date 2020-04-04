@@ -55,7 +55,7 @@ In the image above, the greyed out points are noise. The visualization is possib
 From here, the task is to winnow down to a select few clusters which express beneficial qualities which a business owner would deem advantageous. 
 My investigation leads me to the following cluster groups: 
 
-<img src="visualization/modeling_viz/target_clusters" width="600" height="400" alt="dbscan target clusters" />
+<img src="visualization/modeling_viz/target_clusters.png" width="600" height="400" alt="dbscan target clusters" />
 
 
 
