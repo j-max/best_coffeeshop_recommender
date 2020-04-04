@@ -46,4 +46,5 @@ I try a variety of clustering methods, including kMeans, heirarchical agglomerat
 
 I find DBSCAN returns the best clusters of blocks, having the advantage of weeding out large portions of the city it deems noise.  
 
-<img src="visualization/plotly/plotly_images/dbscan_wnoise.png" width="600" height="300" alt="dbscan with noise greyed out" />  
+<img src="visualization/modeling_vis/dbscan_wnoise.png" width="600" height="400" alt="dbscan with noise greyed out" />  
+
