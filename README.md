@@ -44,7 +44,19 @@ Having composed dataframes which consist of rows corresponding to the above data
 
 I try a variety of clustering methods, including kMeans, heirarchical agglomerative, mean shift, and dbscan. The code for the clustering models is found [here](./models/)
 
-I find DBSCAN returns the best clusters of blocks, having the advantage of weeding out large portions of the city it deems noise.  
+I find DBSCAN(eps=.25, min_samples=11) returns the best clusters of blocks, having the advantage of weeding out large portions of the city it deems noise.  
 
 <img src="visualization/modeling_viz/dbscan_wnoise.png" width="600" height="400" alt="dbscan with noise greyed out" />  
+
+In the image above, the greyed out points are noise. The visualization is possible through condensing the data to two principal components. Below, the image shows the initial clusters with noise filtered out, 42 clusters in total.  
+
+<img src="visualization/modeling_viz/dbscan_nonoise.png" width="600" height="400" alt="dbscan with noise removed" />  
+
+From here, the task is to winnow down to a select few clusters which express beneficial qualities which a business owner would deem advantageous. 
+My investigation leads me to the following cluster groups: 
+
+<img src="visualization/modeling_viz/target_clusters" width="600" height="400" alt="dbscan target clusters" />
+
+
+
 
