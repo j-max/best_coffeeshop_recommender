@@ -57,6 +57,13 @@ My investigation leads me to the following cluster groups:
 
 <img src="visualization/modeling_viz/target_clusters.png" width="600" height="400" alt="dbscan target clusters" />
 
+Here are the clusters superimposed onto a map of the city.  
+
+<img src="visualization/modeling_viz/targets_on_map.png" width="600" height="400" alt="Target clusters on map of city" />
+
+Zoom into the red circle above, we see a potential spot for a coffe shop.  
+
+<img src="visualization/modeling_viz/potential_location.png" width="600" height="400" alt="Target clusters on map of city" />
 
 
 
