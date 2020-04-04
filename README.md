@@ -11,7 +11,7 @@ Data
 ### Census Shapefiles
 In order to translate the various data found below into machine learning ready form depends on census shape files. I use the lat/long centroid of each Chicago block shapefile to count the number of businesses, already existing coffeeshops, and reported crimes within a small square area. I also calculate distance to the nearest El stops and libraries.  View the code for these calculations [here](data/blockshapes).  
 
-<img src="data/data_images/count_image.png" width="600" height="300" alt="data collection visualiztion" />  
+<img src="data/data_images/count_image.png" width="600" height="400" alt="data collection visualiztion" />  
 I use block shape from 2010 to allow me to map census population data to the final dataframe. [here](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.2010.html)  
 
 ## Chicago Data Portal
@@ -21,21 +21,18 @@ I use block shape from 2010 to allow me to map census population data to the fin
 
 - Location data for [Chicago Public Libraries](https://data.cityofchicago.org/Education/Libraries-Locations-Hours-and-Contact-Information/x8fc-8rcq) and [El stops](https://data.cityofchicago.org/Transportation/CTA-System-Information-List-of-L-Stops/8pix-ypme)__
 
-<img src="visualization/plotly/plotly_images/el_stop_map.png"
-     width="600" height="300" alt="Chicago El Stop Map" />  
+<img src="visualization/plotly/plotly_images/el_stop_map.png" width="600" height="300" alt="Chicago El Stop Map" />  
 
 - [Chicago crime records](https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2)__
 
-<img src="visualization/plotly/plotly_images/crime_map.png"
-     width="600" height="300" alt="Chicago Crime Map" />  
+<img src="visualization/plotly/plotly_images/crime_map.png" width="600" height="300" alt="Chicago Crime Map" />  
 
 ## Yelp
 
 - 936 Chicago coffee shops obtained via the Yelp API. 
 - See code [here](./data/yelp) which shows API usage and Postgres storage
-![yelp coffee shop map_map](visualization/plotly/plotly_images/yelp_coffee_shops.png)  
-_<img src="visualization/plotly/plotly_images/yelp_coffee_shops.png"
-     width="600" height="300" alt="coffee shop" />  
+
+<img src="visualization/plotly/plotly_images/yelp_coffee_shops.png" width="600" height="300" alt="coffee shop" />  
 
 _
 ## Census.gov
