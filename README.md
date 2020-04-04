@@ -10,7 +10,7 @@ Data
 
 ### Census Shapefiles
 In order to translate the various data found below into machine learning ready form depends on census shape files. I use the lat/long centroid of each Chicago block shapefile to count the number of businesses, already existing coffeeshops, and reported crimes within a small square area. I also calculate distance to the nearest El stops and libraries.  View the code for these calculations [here](data/blockshapes).  
-[business_map](visualization/plotly/plotly_images/businesses.png)  
+![business_map](visualization/plotly/plotly_images/businesses.png)  
 
 I use block shape from 2010 to allow me to map census population data to the final dataframe. [here](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.2010.html)  
 
