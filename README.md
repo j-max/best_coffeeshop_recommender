@@ -3,7 +3,7 @@ Recommender for Locations to Open a Coffeeshop in Chicago
 
 As a former barista, I have a deep love for coffee.  At least I think it's love, and not caffeine addiction. Aside from providing that sharpening jolt in the morning, coffee shops serve communities by providing safe spaces for conversation, study, and general low key fun.   
 
-I am under strong impression that a community cannot have too many independent coffeeshops.  With that in mind, I created the present project, which uses clustering techniques on business and demographic data to identify potential locations in Chicago where a coffeeshop would thrive.
+I am under the strong impression that a community cannot have too many independent coffeeshops.  With that in mind, I created the present project, which uses clustering techniques on business and demographic data to identify potential locations in Chicago where a coffeeshop would thrive.
 
 Data
 ===============
